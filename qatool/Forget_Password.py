@@ -96,7 +96,7 @@ class PasswordResetApp(tk.Frame):
         set_password_button.grid(row=2, column=1, columnspan=2, pady=10)
 
     def init_ui(self):
-        self.img = tk.PhotoImage(file=cwd+'/zoomimagepeopr.png')
+        self.img = tk.PhotoImage(file=cwd+'/zoomimagepeopr.png', master=self.root)
         tk.Label(self, image=self.img, bg='white').place(x=0, y=0, relwidth=1, relheight=1)
 
         self.label_username = tk.Label(self, text='Username:', font=('Microsoft YaHei UI Light', 15))
