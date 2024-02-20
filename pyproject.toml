@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qatool"
+version = "0.0.1"
+authors = [
+  { name="vivek", email="vsonar2023@fau.edu" },
+]
+description = "..."
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatchling.module]
+name = "qatool"
+
+[tool.hatchling.sdist]
+include = [
+  "qatool/",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/viveksonar23/QA_TOOL_TKINTER"
+"Bug Tracker" = "https://github.com/viveksonar23/QA_TOOL_TKINTER/issues"
